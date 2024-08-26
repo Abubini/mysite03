@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cv.css">
+    <title>CV</title>
+</head>
+<body>
+    <header>                
+        <div class="logo">
+            <h1>Biniyam</h1>
+            <h1 id="girma">Girma</h1>
+        </div>
+        <div class="navs">
+            <a href="index.html" class="nav">Home</a>
+            <a href="about.html" class="nav">About</a>
+            <a href="project.html" class="nav">Project</a>
+        </div>
+        <div class="nav-container">
+            <button class="open-btn" onclick="openNav()">☰</button>
+             <nav id="mySidebar" class="sidebar">
+                     <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">×</a>
+                     <a href="index.html" class="nav">Home</a>
+                     <a href="about.html" class="nav">About</a>
+                     <a href="project.html" class="nav">Project</a>
+                    
+                 </nav>
+                 </div>
+    </header>
+
+
+    <div class="name">
+        <h1 class="name">BINIYAM GIRMA</h1>
+    </div>
+
+    <main>
+        <div class="main">
+        <div class="container">
+            <h2 class="heading">summary</h2>
+            <p class="description">I am pursuing a Software Engineering degree at Addis Ababa University, where my studies are centered on advancing my expertise in programming, project management, and technical problem-solving. As I progress through my academic journey, I am dedicated to broadening my knowledge and honing my skills in these crucial domains. My passion for technology is complemented by a proactive approach to learning, allowing me to stay abreast of industry trends and innovations.</p>
+            <p class="description">I am recognized for my effective communication skills, which enable me to collaborate seamlessly with teams and stakeholders. My collaborative work style fosters productive environments where ideas can flourish and projects can thrive. Additionally, I have a strong ability to simplify complex concepts</p>
+            <p class="description">Outside of my academic pursuits, I am proactive in seeking practical experiences and opportunities to apply my learning. Iam eager to contribute to innovative projects that challenge me to grow professionally and academically. Through my studies and hands-on experiences, I aim to make meaningful contributions to the field of software engineering and beyond.</p>
+        </div>
+
+        <div class="container">
+            <h2 class="heading">eduction</h2>
+            <p class="description">Currently enrolled as a third-year student at Addis Ababa University, pursuing studies in the Software Engineering department.</p>
+        </div>
+
+        <div class="container">
+            <h2 class="heading">skills</h2>
+            <div class="skills">
+                <dl>
+                    <dt>web</dt>
+                    <dd><ul>
+                        <li><dt>frontend</dt>
+                        <dd>html, css, javascript</dd></li>
+                        <li><dt>backend</dt>
+                        <dd>nestjs</dd></li>
+                    </ul></dd>
+                    <dt class="dt">programing</dt>
+                    <dd class="dd">Java(basics), Python(basics), SQL</dd>
+                    <dt class="dt">development tools</dt>
+                    <dd class="dd">intelij, Visual Studio, pycharm</dd>
+                    <dt class="dt">soft skills</dt>
+                    <dd class="dd">Communication, team work, Problem solving, Adaptability, Critical Thinking</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <aside>
+        <img src="/images/me.jpg" alt="me" class="me">
+        <h2 class="asideHeading">contact</h2>
+        <label for="adress" class="label">adress</label>
+        <p class="asideDescription" id="adress">1590 Mamo Sefer, 1000 Addis Ababa, Ethiopia</p>
+        <label for="phone" class="label">phone</label>
+        <p class="asideDescription" id="phone">0902392691</p>
+        <label for="email" class="label">email</label>
+        <a href="mailto:bini.bg.bg@gmail.com" class="asideDescription" id="email">bini.bg.bg@gmail.com</a>
+        <h2 class="asideHeading">language</h2>
+        <dl class="asideList">
+            <dt>amharic</dt>
+            <dd>native</dd>
+            <dt>english</dt>
+            <dd>intermediate</dd>
+        </dl>
+
+
+
+    </aside>
+    
+</main>
+
+
+    <footer>
+        <p class="footer">&copy <span id="year"></span> <a href="index.html">Biniyam Girma</a>. All rights reserved.</p>
+    </footer>
+    
+
+
+    
+    <script>
+        function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+    }
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

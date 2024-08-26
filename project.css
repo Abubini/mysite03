@@ -1,0 +1,270 @@
+html::-webkit-scrollbar {
+    width: 1px; /* Width of the scrollbar */
+}
+header{
+
+	display:flex;
+	justify-content: space-between;
+	width:100%;
+	height:auto;
+	align-items: center;
+	background-color: rgba(38, 38, 37, 0.5);
+	z-index: 100;
+	}
+.logo{
+    display:flex;
+    gap:10px;
+    margin-left: 100px;
+}
+.logo h1{
+    font-weight: bolder;
+    color: #FF8E01;
+    
+    font-size: 2.5em;
+}
+#girma{
+    color:#CC6B02;
+}
+.navs{
+    
+    margin-right:13em;
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav{
+    color:white;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    font-size:2em;
+    width: 4em;
+    height:1.5em;
+    transition: all 0.3s;
+
+}
+.nav::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease-in-out;
+    box-shadow: -2px 0px 10px 0px white;
+    
+}
+
+.nav:hover::after {
+    width: 100%;
+    box-shadow: -2px 0px 10px 2px white;
+}
+
+
+
+
+body{
+    background-color: rgb(41, 40, 40);
+    height: 100%;
+}
+main{
+    display:flex;
+    justify-content: center;
+    color: white;
+}
+.main{
+    width:90%;
+    background-color: rgb(44, 43, 43);
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 1px rgb(128, 127, 127);
+    display:grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+    row-gap: 20px;
+}
+
+.project{
+    border:1px solid;
+    width:80%;
+    height:25em;
+    align-self: center;
+    margin-top:15px;
+    margin-bottom:20px;
+    border-radius:25px;
+    overflow-y:scroll;
+}
+.project::-webkit-scrollbar {
+    width: 1px; 
+}
+.heading{
+    text-align: center;
+    font-size:2em;
+    color:#CC6B02;
+}
+
+.description {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+    line-height: 1.2em;
+    text-indent:30px;
+}
+
+
+
+.buttons{
+    display:flex;
+    justify-content: space-around; 
+    margin-bottom: 15px;
+}
+.links{
+    color:white;
+    text-decoration: none;
+    border:1px solid;
+    font-size: 2em;
+    width:5em;
+    text-align: center;
+    background-color:rgba(255,255, 255, 0.9);
+    color:#CC6B02;
+    border-radius: 30px;
+    transition: ease-in 0.3s;
+}
+.links:hover{
+    background-color:transparent;
+    color:white;
+}
+
+#p01, #p02 {
+    background-image: url(/images/image.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    transition: background-image ease-in-out 2s;
+}
+#p03{
+    background-image: url(/images/vigorgym.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+
+}
+
+#p01:hover, #p02:hover, #p03:hover {
+    background-image: none;
+}
+
+
+
+
+
+footer{
+    width:95%;
+    color:white;
+    text-align:center;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+@media (max-width: 1100px) {
+
+    .logo{
+        margin-left:15px;
+    }
+    .navs{
+        margin-right:8em;
+    }
+    .main{
+        grid-template-columns: auto;
+    }
+}
+
+
+@media (max-width: 768px){
+
+
+    .navs{
+        margin-right:3em;
+        width:40%;
+        
+    }
+    
+}
+
+@media  (min-width: 701px){
+    .nav-container{
+        display:none;
+    }
+    
+}
+
+@media (max-width: 700px){
+    .navs{
+        display:none;
+    }
+
+    .sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+       background-color: rgba(38, 38, 37, 0.8);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        display:flex;
+        flex-direction: column;
+        gap:10px;
+        
+    }
+    .nav{
+        text-align:left;
+        margin-left: 15px;
+    }
+
+    .sidebar .close-btn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    .close-btn {
+        background-color:transparent;
+        color:white;
+        text-decoration: none;
+
+    }
+    .open-btn {
+        cursor: pointer;
+        background-color: transparent;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 25px;
+        margin-right:50px;
+
+    }
+    
+    .open-btn:hover{
+        
+        font-weight: bolder;
+        font-size:30px;
+    }
+
+    .close-btn:hover{
+        text-shadow: 0px 0px 2px white;
+        font-weight: bolder;
+    }
+    .links{
+        width:4em;
+        font-size:1.5em;
+    }
+
+
+}

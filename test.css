@@ -1,0 +1,188 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+.name{
+    margin-left: 6em;
+    font-size: em;
+    font-weight: bold;
+}
+
+
+
+h1.name {
+    margin-left: 4em;
+    font-size: 4em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+}
+main{
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    
+    width:90%;
+    border: 1px solid black;
+    gap:15px;
+}
+/* Main Layout */
+.main {
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    margin-top: 20px;
+    /* border:1px solid black; */
+}
+
+/* Left Section - Main Content */
+.container {
+    width: 60%;
+    margin-right: 20px;
+}
+
+.heading {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.description {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Right Section - Sidebar */
+aside {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    width: 20%;
+    height:100%;
+    background-color: #555454;
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-left:10px;
+    padding-bottom: 50px;
+}
+
+.me {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 0px;
+}
+
+.asideHeading {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.label {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    display: block;
+    margin-top: 10px;
+}
+
+.asideDescription {
+    font-size: 14px;
+    color: #858282;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+a.asideDescription {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a.asideDescription:hover {
+    text-decoration: underline;
+}
+
+.asideList {
+    margin: 0;
+    padding: 0;
+}
+
+.asideList dt {
+    font-weight: bold;
+    font-size: 14px;
+    float: left;
+    width: 60px; /* Adjust the width based on your content */
+    clear: left; /* Ensures that each term starts on a new line */
+}
+.asideList dt::after, dt::after, .heading::after, .label::after{
+    content:":";
+}
+
+.asideList dd {
+    margin: 0;
+    padding-left: 10px; /* Aligns dd with dt, should be slightly more than dt's width */
+    font-size: 14px;
+}
+
+/* Skills Section */
+dl {
+    margin: 0;
+    padding: 0;
+}
+
+dt {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+dd {
+
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+
+.dt {
+    font-weight: bold;
+    font-size: 14px;
+    float: left;
+    width: 130px; /* Adjust width based on your content */
+    clear: left; /* Ensures each dt starts on a new line */
+    margin-bottom: 5px;
+}
+
+
+.dd {
+    margin: 0;
+    padding-left: 140px; /* Aligns dd with dt, should be slightly more than dt's width */
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+li dt {
+    display: inline-block;
+    width: 60px; /* Adjust as necessary */
+}
+
+li dd {
+    display: inline;
+    margin-left: 1px;
+}

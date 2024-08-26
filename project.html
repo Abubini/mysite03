@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project.css">
+    <title>PROJECTS</title>
+</head>
+<body>
+
+    <header>                
+        <div class="logo">
+            <h1>Biniyam</h1>
+            <h1 id="girma">Girma</h1>
+        </div>
+        <div class="navs">
+            <a href="index.html" class="nav">Home</a>
+            <a href="about.html" class="nav">About</a>
+            <a href="cv.html" class="nav">Cv</a>
+        </div>
+        <div class="nav-container">
+            <button class="open-btn" onclick="openNav()">☰</button>
+             <nav id="mySidebar" class="sidebar">
+                     <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">×</a>
+                     <a href="index.html" class="nav">Home</a>
+                     <a href="about.html" class="nav">About</a>
+                     <a href="cv.html" class="nav">Cv</a>
+                     
+                    
+                 </nav>
+                 </div>
+    </header>
+
+
+    <main>
+        <section class="main">
+            <div class="project"  id="p03">
+                <h1 class="heading">Gym system</h1>
+                <p class="description">I created a robust gym management system designed to streamline the membership process by enabling users to purchase memberships online, allowing for convenient registration from any location. The system includes an innovative sponsorship feature, where companies or individuals can sponsor multiple members by purchasing a plan and receiving a unique code. This code enables the specified number of members to register under it, offering flexibility and ease of access for both sponsors and members. Whether sponsored or self-paying, members have the option to select from a variety of classes provided by the gym. All memberships are set to expire 30 days from the date of purchase, necessitating monthly renewals. The system also empowers an admin to manage the entire platform, with capabilities to add, edit, or remove membership plans and classes. Additionally, the platform features a blog page that provides users with workout tips, further managed by the admin to ensure the content remains relevant and useful.</p>
+                <div class="buttons">
+                    <a href="https://abubini.github.io/AAiTWebVigorGym/" class="links" target="_blank">preview</a>
+                    <a href="https://github.com/Abubini/AAiTWebVigorGym" class="links" target="_blank">github</a>
+                </div>
+            </div>
+
+        <div class="project" id="p01">
+            <h1 class="heading" >project name</h1>
+            <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident fugiat facere ad totam expedita nostrum dolores obcaecati deserunt sunt, architecto dolore impedit quos harum libero at, neque veritatis! Ipsum, reiciendis voluptatum soluta quo sit sed maxime cupiditate pariatur, porro quos nihil perspiciatis sunt, placeat eos ex asperiores. Sapiente, vel nihil?Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure illo sequi quidem, commodi laboriosam atque sit veritatis, similique quaerat accusantium corporis fuga quae. Recusandae, magni. Vero reiciendis nam dolores, repudiandae repellendus architecto reprehenderit repellat similique inventore molestiae veritatis exercitationem sed facere et est corrupti quibusdam fugit ab possimus aperiam recusandae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ratione neque consequatur laboriosam quaerat ipsa et voluptatibus animi, molestiae similique non tenetur, repellendus in qui repudiandae, voluptate dicta maiores? Officia molestiae ducimus alias. Possimus ex expedita quod fuga maxime aperiam officiis, reiciendis harum placeat quaerat adipisci quas quae nobis doloribus!</p>
+            <div class="buttons">
+                <a href="#" class="links">links</a>
+                <a href="#" class="links">github</a>
+            </div>
+        </div>
+
+        <div class="project" id="p02">
+            <h1 class="heading">project name</h1>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque optio obcaecati nostrum pariatur similique praesentium numquam officiis autem dignissimos! Quisquam veritatis harum minima laudantium iste corrupti iure quaerat illo, dicta provident? Ex molestiae unde iusto officiis, vitae, quisquam corrupti atque quos dignissimos molestias accusamus cumque eum. Hic eveniet eaque reiciendis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit numquam sapiente dignissimos, facere mollitia quisquam provident natus. Dicta vero voluptas, quasi veritatis natus fugiat vitae asperiores ea enim facere corrupti nesciunt velit dolores labore voluptates, saepe adipisci perferendis placeat accusantium doloribus aliquam cumque eius itaque? Cupiditate sapiente maxime at dolores?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ratione neque consequatur laboriosam quaerat ipsa et voluptatibus animi, molestiae similique non tenetur, repellendus in qui repudiandae, voluptate dicta maiores? Officia molestiae ducimus alias. Possimus ex expedita quod fuga maxime aperiam officiis, reiciendis harum placeat quaerat adipisci quas quae nobis doloribus!</p>
+            <div class="buttons">
+                <a href="#" class="links" >links</a>
+                <a href="#" class="links">github</a>
+            </div>
+        </div>
+
+        
+
+
+         </section>
+    </main>
+
+
+
+
+
+
+    <footer>
+        <p class="footer">&copy <span id="year"></span> <a href="index.html">Biniyam Girma</a>. All rights reserved.</p>
+    </footer>
+    
+
+
+    
+    <script>
+        function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+    }
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    
+</body>
+</html>

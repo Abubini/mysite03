@@ -1,0 +1,367 @@
+html::-webkit-scrollbar {
+    width: 1px; /* Width of the scrollbar */
+}
+header{
+
+	display:flex;
+	justify-content: space-between;
+	width:100%;
+	height:auto;
+	align-items: center;
+	background-color: rgba(38, 38, 37, 0.5);
+	
+	z-index: 100;
+	}
+.logo{
+    display:flex;
+    gap:10px;
+    margin-left: 100px;
+}
+.logo h1{
+    font-weight: bolder;
+    color: #FF8E01;
+    
+    font-size: 2.5em;
+}
+#girma{
+    color:#CC6B02;
+}
+.navs{
+    
+    margin-right:13em;
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav{
+    color:white;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    font-size:2em;
+    width: 4em;
+    height:1.5em;
+    transition: all 0.3s;
+
+}
+.nav::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease-in-out;
+    box-shadow: -2px 0px 10px 0px white;
+    
+}
+
+.nav:hover::after {
+    width: 100%;
+    box-shadow: -2px 0px 10px 2px white;
+}
+
+
+
+
+body{
+    background-color: rgb(41, 40, 40);
+    height: 100%;
+    color: white;
+}
+.name{
+    margin-left: 6em;
+    font-size: em;
+    font-weight: bold;
+}
+
+
+
+h1.name {
+    margin-left: 4em;
+    font-size: 4em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+}
+main{
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    
+    width:90%;
+    gap:15px;
+}
+/* Main Layout */
+.main {
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    height:45em;
+    margin-top: 20px;
+    overflow-y: scroll;
+    /* border:1px solid black; */
+}
+
+/* Left Section - Main Content */
+.container {
+    width: 60%;
+    margin-right: 20px;
+}
+
+.heading {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.description {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Right Section - Sidebar */
+aside {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    width: 20%;
+    height:100%;
+    background-color: #3b3b3b;
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-left:10px;
+    padding-bottom: 50px;
+}
+
+.me {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 0px;
+}
+
+.asideHeading {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.label {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    display: block;
+    margin-top: 10px;
+}
+
+.asideDescription {
+    font-size: 14px;
+    color: #d4d4d4;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+a.asideDescription {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a.asideDescription:hover {
+    text-decoration: underline;
+}
+
+.asideList {
+    margin: 0;
+    padding: 0;
+}
+
+.asideList dt {
+    font-weight: bold;
+    font-size: 14px;
+    float: left;
+    width: 60px; /* Adjust the width based on your content */
+    clear: left; /* Ensures that each term starts on a new line */
+}
+.asideList dt::after, dt::after, .heading::after, .label::after{
+    content:":";
+}
+
+.asideList dd {
+    margin: 0;
+    padding-left: 10px; /* Aligns dd with dt, should be slightly more than dt's width */
+    font-size: 14px;
+}
+
+/* Skills Section */
+dl {
+    margin: 0;
+    padding: 0;
+}
+
+dt {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+dd {
+
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+
+.dt {
+    font-weight: bold;
+    font-size: 14px;
+    float: left;
+    width: 130px; /* Adjust width based on your content */
+    clear: left; /* Ensures each dt starts on a new line */
+    margin-bottom: 5px;
+}
+
+
+.dd {
+    margin: 0;
+    padding-left: 140px; /* Aligns dd with dt, should be slightly more than dt's width */
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+li dt {
+    display: inline-block;
+    width: 60px; /* Adjust as necessary */
+}
+
+li dd {
+    display: inline;
+    margin-left: 1px;
+}
+
+
+
+
+
+
+
+footer{
+    width:95%;
+    color:white;
+    text-align:center;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+
+@media (max-width: 1100px) {
+
+    .logo{
+        margin-left:15px;
+    }
+    .navs{
+        margin-right:8em;
+    }
+    .hardSkill{
+        margin-left:4em;
+
+    }
+    
+}
+
+@media (max-width: 768px){
+
+
+    .navs{
+        margin-right:3em;
+        width:40%;
+        
+    }
+    
+}
+
+@media  (min-width: 701px){
+    .nav-container{
+        display:none;
+    }
+    
+}
+
+@media (max-width: 700px){
+    .navs{
+        display:none;
+    }
+
+    .sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+       background-color: rgba(38, 38, 37, 0.8);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        display:flex;
+        flex-direction: column;
+        gap:10px;
+        
+    }
+    .nav{
+        text-align:left;
+        margin-left: 15px;
+    }
+
+    .sidebar .close-btn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    .close-btn {
+        background-color:transparent;
+        color:white;
+        text-decoration: none;
+
+    }
+    .open-btn {
+        cursor: pointer;
+        background-color: transparent;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 25px;
+        margin-right:50px;
+
+    }
+    
+    .open-btn:hover{
+        
+        font-weight: bolder;
+        font-size:30px;
+    }
+
+    .close-btn:hover{
+        text-shadow: 0px 0px 2px white;
+        font-weight: bolder;
+    }
+
+
+}
